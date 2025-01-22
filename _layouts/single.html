@@ -48,6 +48,7 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+        {% include page__taxonomy.html size="normal"%}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
@@ -56,7 +57,7 @@ layout: default
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
-        {% include page__taxonomy.html %}
+        
         {% include page__date.html %}
       </footer>
 

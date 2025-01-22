@@ -4,16 +4,39 @@
   {% when "jekyll-archives" %}
     {% assign path_type = nil %}
 {% endcase %}
+{% assign categories = include.categories | default: page.categories %}
+
 
 {% if site.category_archive.path %}
-  {% assign categories_sorted = page.categories | sort_natural %}
+  {% assign categories_sorted = categories | sort_natural %}
 
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
-    <span itemprop="keywords">
-    {% for category_word in categories_sorted %}
-      <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
-    {% endfor %}
-    </span>
-  </p>
+  {% assign size = include.size | default: "normal" %}
+
+  {% if size == "small" %}
+    <p class="page__taxonomy" style="margin:0;font-size: small;">
+      <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true" ></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
+      <span itemprop="keywords">
+      {% for category_word in categories_sorted %}
+        <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag" style="margin-bottom: 0px; padding: 0px 0px; border: None;">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      {% endfor %}
+      </span>
+    </p>
+  {% else %}
+    <p class="page__taxonomy" style="font-size: smaller;">
+      <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
+      <span itemprop="keywords">
+      {% for category_word in categories_sorted %}
+        <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag" style="margin-bottom: 0px;  padding: 3px 5px">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      {% endfor %}
+      </span>
+    </p>
+  {% endif %}
+
+
+
+
+
+
+
+  
 {% endif %}

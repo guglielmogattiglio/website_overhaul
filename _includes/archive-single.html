@@ -25,6 +25,15 @@
       {% endif %}
     </h2>
     {% include page__meta.html type=include.type %}
+ 
+    {% if post.categories and post.categories.size > 0 %}
+      {% include category-list.html categories=post.categories size="small"%}
+    {% endif %}
+
+      
+    {% if post.tags and post.tags.size > 0 %}
+      {% include tag-list.html tags=post.tags size="small"%}
+    {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
