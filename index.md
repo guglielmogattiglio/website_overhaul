@@ -13,7 +13,7 @@ Welcome to my website :)
 This is the place where I publish my [research](/research/) and some of the [projects](/portfolio/) I am working on. Occasionally, I also [post](/posts/) tutorial and articles on ML and AI topics or recent research that I find fascinating.
 
 
-To kickstart it, I am planning a _major_ series on multimodal language models, curating the whole pipeline: 
+To kickstart it, I am planning a _major_ series on **multimodal language models**, curating the whole pipeline: 
 - data collection
 - pre-processing
 - label generation (using LLMs, of course)

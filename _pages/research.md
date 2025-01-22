@@ -1,7 +1,10 @@
 ---
 permalink: /research/
 title: "Research"
+toc: true
+toc_sticky: true
 ---
+
 I am a last-year PhD student in Machine Learning at the [Warwick Mathematics and Statistics CDT](https://warwick.ac.uk/fac/sci/fromas) under the joint supervision of Prof. Lyudmila Grigoryeva and Prof. Massimiliano Tamborrino. 
 
 My current research direction combines machine learning and parallel-in-time algorithms to solve differential equations numerically (Parareal). Recently, I have been working to extend this methods under the probabilistic numerics umbrella. In the past, I have worked on the generation of stochastic processes and learning of dynamical systems, and computational methods for Bayesian inference.
