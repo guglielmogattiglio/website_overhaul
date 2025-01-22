@@ -42,7 +42,7 @@ I thought about keeping this "About me" page personal, but some professional con
 ### Awards
 
 - Reproducibility award at the [Third BioInference Conference](https://bioinference.github.io/2024/), for [Nearest Neighbors GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](https://github.com/Parallel-in-Time-Differential-Equations/Nearest-Neighbors-GParareal).
-- Travel funding awarrd at the 38th Conference on Neural Information Processing Systems ([NeurIPS 22024](https://neurips.cc/Conferences/2024))
+- Travel funding award at the 38th Conference on Neural Information Processing Systems ([NeurIPS 22024](https://neurips.cc/Conferences/2024))
 
 ### Who I am
 
