@@ -4,7 +4,6 @@
     display: grid;
     grid-gap: 2em;
     margin-top: 2em;
-    // columns at different breakpoints
     grid-template-columns: 1fr;
   
     @include breakpoint($medium) {
@@ -17,21 +16,18 @@
   }
   
   .portfolio-grid__item {
-    position: relative; 
-    // remove overflow so the overlay can expand beyond the block
-    overflow: visible; 
+    position: relative;
+    overflow: visible; // Let the overlay show if needed
     border: 1px solid $border-color;
     border-radius: $border-radius;
     background: #fff;
   
-    // The non-hover content
     .portfolio-grid__content {
       display: flex;
       flex-direction: column;
     }
   
     .portfolio-grid__image-wrapper {
-      // just the image
       img {
         width: 100%;
         height: auto;
@@ -51,72 +47,77 @@
       .portfolio-grid__tags {
         margin-bottom: 0.5em;
         font-size: $type-size-7;
-        color: $muted-text-color; 
+        color: $muted-text-color;
       }
   
       p {
         margin: 0;
         font-size: $type-size-6;
-        // The “description” text
       }
     }
   
-    // The overlay (hover)
+    // The overlay that spans the entire container
     .portfolio-grid__overlay {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      // make it expand from center
-      transform: translate(-50%, -50%);
-      // big padding so text can grow
-      padding: 1.2em;
-      min-width: 300px; 
-      max-width: 350px; // optional limit
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
       background-color: rgba(#000, 0.8);
       color: #fff;
-      text-align: center;
-      border-radius: $border-radius;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       z-index: 99;
       opacity: 0;
-      pointer-events: none; 
+      pointer-events: none;
       transition: opacity 0.3s ease;
   
-      h2 {
-        margin-top: 0;
-        margin-bottom: 0.5em;
-        font-size: $type-size-4;
-      }
-  
-      .portfolio-grid__tags--overlay {
-        font-size: $type-size-7;
-        margin-bottom: 1em;
-        opacity: 0.9;
-      }
-  
-      .portfolio-grid__detail {
-        font-size: $type-size-6;
-        margin-bottom: 1em;
-      }
-  
-      .portfolio-grid__link {
-        display: inline-block;
-        margin-top: 1em;
-        padding: 0.5em 1em;
-        color: #fff;
-        border: 1px solid #fff;
+      // Nested container where we apply min/max constraints
+      .portfolio-grid__overlay-content {
+        background: transparent; // or semi-transparent if desired
+        padding: 1em;
+        text-align: center;
         border-radius: $border-radius;
-        text-decoration: none;
-        &:hover {
-          background: #fff;
-          color: #000;
-        }
+        min-width: 250px;
+        max-width: 350px;
       }
     }
   
-    // Show overlay on hover over the entire item
+    // Show overlay on hover of the entire item
     &:hover .portfolio-grid__overlay {
       opacity: 1;
       pointer-events: auto;
+    }
+  
+    .portfolio-grid__overlay-content h2 {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      font-size: $type-size-4;
+    }
+  
+    .portfolio-grid__overlay-content .portfolio-grid__tags--overlay {
+      font-size: $type-size-7;
+      margin-bottom: 1em;
+      opacity: 0.9;
+    }
+  
+    .portfolio-grid__overlay-content .portfolio-grid__detail {
+      font-size: $type-size-6;
+      margin-bottom: 1em;
+    }
+  
+    .portfolio-grid__overlay-content .portfolio-grid__link {
+      display: inline-block;
+      margin-top: 1em;
+      padding: 0.5em 1em;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: $border-radius;
+      text-decoration: none;
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
     }
   }
   
