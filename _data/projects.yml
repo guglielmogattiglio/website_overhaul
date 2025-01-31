@@ -1,7 +1,7 @@
 - title: "Neural Style Transfer Playground"
   tags: ["Deep Learning", "Computer Vision", "NLP", "Abracadabra", "pim salim"]
   description: "Realtime style transfer using a lightweight CNN. Trained on classical paintings, it converts any photo into a Monet-like style in seconds."
-  detail: "This project demonstrates how to train a feed-forward CNN for style transfer, achieving near real-time performance. It supports custom user-defined styles and runs on CPU or GPU seamlessly."
+  detail: "This project demonstrates how to train a feed-forward CNN for style transfer, This project demonstrates how to train a feed-forward CNN for style transfer, This project demonstrates how to train a feed-forward CNN for style transfer, achieving near real-time performance. It supports custom user-defined styles and runs on CPU or GPU seamlessly."
   link: "/blog/tex-willer-generation-1"
   image_path: "/assets/images/tex_willer_panel_ex.jpg"
 

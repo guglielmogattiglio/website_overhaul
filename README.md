@@ -16,6 +16,10 @@ Contains basic configuration to get you a site with:
 
 Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 
+
+`bundle exec jekyll serve`
+
+
 ---
 
 ## Troubleshooting

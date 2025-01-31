@@ -1,95 +1,41 @@
 // _portfolio.scss
-// Here we style the portfolio grid to have 2 or 3 columns, hover effects, etc.
 
 .portfolio-grid {
     display: grid;
     grid-gap: 2em;
     margin-top: 2em;
-    // Adjust how many columns at various breakpoints
-    grid-template-columns: 1fr; // default 1 column (mobile)
+    // columns at different breakpoints
+    grid-template-columns: 1fr;
   
     @include breakpoint($medium) {
       grid-template-columns: repeat(2, 1fr);
     }
   
     @include breakpoint($x-large) {
-      // The user wants 2 or 3 projects per row, so let's do 3 from wide screens
       grid-template-columns: repeat(3, 1fr);
     }
   }
   
   .portfolio-grid__item {
-    background: #fff; // or your chosen background
+    position: relative; 
+    // remove overflow so the overlay can expand beyond the block
+    overflow: visible; 
     border: 1px solid $border-color;
     border-radius: $border-radius;
-    overflow: hidden;
-    position: relative; // for the overlay
+    background: #fff;
+  
+    // The non-hover content
+    .portfolio-grid__content {
+      display: flex;
+      flex-direction: column;
+    }
   
     .portfolio-grid__image-wrapper {
-      position: relative;
-      overflow: hidden;
-  
+      // just the image
       img {
         width: 100%;
         height: auto;
-        transition: transform 0.4s ease;
         display: block;
-      }
-  
-      &:hover img {
-        // On hover, scale the background (the image)
-        transform: scale(1.1);
-      }
-  
-      .portfolio-grid__overlay {
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(#000, 0.7);
-        color: #fff;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-  
-        padding: 1em;
-        text-align: center;
-  
-        h2 {
-          margin-bottom: 0.5em;
-        }
-  
-        .portfolio-grid__tags {
-          font-size: $type-size-7;
-          margin-bottom: 1em;
-          opacity: 0.9;
-        }
-  
-        .portfolio-grid__detail {
-          font-size: $type-size-6;
-          margin-bottom: 1em;
-        }
-  
-        .portfolio-grid__link {
-          display: inline-block;
-          margin-top: 1em;
-          padding: 0.5em 1em;
-          color: #fff;
-          border: 1px solid #fff;
-          border-radius: $border-radius;
-          text-decoration: none;
-          &:hover {
-            background: #fff;
-            color: #000;
-          }
-        }
-      }
-  
-      // reveal overlay on hover
-      &:hover .portfolio-grid__overlay {
-        opacity: 1;
       }
     }
   
@@ -97,14 +43,80 @@
       padding: 1em;
   
       h3 {
-        margin: 0 0 0.5em;
+        margin-top: 0;
+        margin-bottom: 0.25em;
         font-size: $type-size-5;
+      }
+  
+      .portfolio-grid__tags {
+        margin-bottom: 0.5em;
+        font-size: $type-size-7;
+        color: $muted-text-color; 
       }
   
       p {
         margin: 0;
         font-size: $type-size-6;
+        // The “description” text
       }
+    }
+  
+    // The overlay (hover)
+    .portfolio-grid__overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      // make it expand from center
+      transform: translate(-50%, -50%);
+      // big padding so text can grow
+      padding: 1.2em;
+      min-width: 300px; 
+      max-width: 350px; // optional limit
+      background-color: rgba(#000, 0.8);
+      color: #fff;
+      text-align: center;
+      border-radius: $border-radius;
+      z-index: 99;
+      opacity: 0;
+      pointer-events: none; 
+      transition: opacity 0.3s ease;
+  
+      h2 {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        font-size: $type-size-4;
+      }
+  
+      .portfolio-grid__tags--overlay {
+        font-size: $type-size-7;
+        margin-bottom: 1em;
+        opacity: 0.9;
+      }
+  
+      .portfolio-grid__detail {
+        font-size: $type-size-6;
+        margin-bottom: 1em;
+      }
+  
+      .portfolio-grid__link {
+        display: inline-block;
+        margin-top: 1em;
+        padding: 0.5em 1em;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: $border-radius;
+        text-decoration: none;
+        &:hover {
+          background: #fff;
+          color: #000;
+        }
+      }
+    }
+  
+    // Show overlay on hover over the entire item
+    &:hover .portfolio-grid__overlay {
+      opacity: 1;
+      pointer-events: auto;
     }
   }
   
