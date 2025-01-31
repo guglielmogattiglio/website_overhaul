@@ -1,0 +1,108 @@
+/*
+ * _portfolio.scss
+ *
+ * Custom styles for the portfolio page.
+ * Place this file in _sass/minimal-mistakes/ or a “custom” subfolder.
+ */
+
+ .projects-grid {
+    /* We want a responsive grid that can do 2 or 3 columns. */
+    display: grid;
+    grid-gap: 1.5rem;  /* spacing between cards */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  
+    /* Make the container bigger than the default .wide, e.g., 1.5 times bigger */
+    /* Minimal Mistakes sets .wide to use the entire container with some padding;
+       We'll forcibly override it here:
+    */
+    max-width: 90%; /* or 95%, see how it fits your design */
+    margin-left: auto;
+    margin-right: auto;
+  
+    /* For columns: 1 column on mobile, up to 3 on large screens */
+    grid-template-columns: 1fr;  /* phone defaults */
+  
+    @include breakpoint($small) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint($medium-wide) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .project-card {
+    position: relative;
+    overflow: hidden; /* ensures overlay doesn't exceed bounds */
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(#000, 0.15);
+    background-color: #fff;
+  
+    .project-image {
+      /* The image is placed here. We'll animate scale on hover. */
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        -webkit-transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
+      }
+    }
+  
+    .project-overlay {
+      /* The overlay text container that becomes visible on hover */
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: rgba(#000, 0.7);
+      color: #fff;
+      padding: 1rem;
+      transition: top 0.3s ease;
+      /* Initially hidden below the card */
+      /* For mobile users, you may want it partially visible or different approach. */
+    }
+  
+    &:hover {
+      .project-image img {
+        transform: scale(1.08); /* slightly enlarge image on hover */
+      }
+      .project-overlay {
+        top: 40%; /* move up to reveal the overlay text. Adjust to taste */
+      }
+    }
+  
+    /* Titles, tags, etc. */
+    .project-title {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+  
+    .project-tags {
+      font-size: 0.9rem;
+      color: #ddd;
+      margin-bottom: 0.5rem;
+    }
+  
+    .project-desc {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .project-link {
+      display: inline-block;
+      padding: 0.35rem 0.8rem;
+      background-color: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 3px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #ffeb3b;
+        color: #000;
+      }
+    }
+  }
+  

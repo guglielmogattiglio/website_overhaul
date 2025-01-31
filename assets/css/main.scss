@@ -3,6 +3,9 @@
 
 @import "minimal-mistakes";
 
+/* Import your new partial after the theme */
+@import "minimal-mistakes/portfolio";  // or "minimal-mistakes/custom/portfolio"
+
 html {
   font-size: 18px; // change to whatever
 
