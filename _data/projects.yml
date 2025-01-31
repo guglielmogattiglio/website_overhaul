@@ -1,5 +1,5 @@
 - title: "Neural Style Transfer Playground"
-  tags: ["Deep Learning", "Computer Vision"]
+  tags: ["Deep Learning", "Computer Vision", "NLP", "Abracadabra", "pim salim"]
   description: "Realtime style transfer using a lightweight CNN. Trained on classical paintings, it converts any photo into a Monet-like style in seconds."
   detail: "This project demonstrates how to train a feed-forward CNN for style transfer, achieving near real-time performance. It supports custom user-defined styles and runs on CPU or GPU seamlessly."
   link: "/blog/tex-willer-generation-1"
@@ -10,7 +10,7 @@
   description: "Hybrid AI-numerical approach for solving PDEs using parallel-in-time strategies."
   detail: "Combining classical PDE solvers and neural networks to break the time barrier in PDE computations. Explore distributed HPC results here."
   link: "/projects/time-parallel"
-  image_path: "/assets/images/tex_willer_panel_ex.jpg"
+  image_path: "/assets/images/photo-collage.png.png"
 
 - title: "My Homemade Drone"
   tags: ["Robotics", "DIY"]
