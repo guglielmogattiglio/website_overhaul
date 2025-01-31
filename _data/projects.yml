@@ -1,0 +1,34 @@
+- title: "Neural Style Transfer Playground"
+  tags: ["Deep Learning", "Computer Vision"]
+  description: "Realtime style transfer using a lightweight CNN. Trained on classical paintings, it converts any photo into a Monet-like style in seconds."
+  detail: "This project demonstrates how to train a feed-forward CNN for style transfer, achieving near real-time performance. It supports custom user-defined styles and runs on CPU or GPU seamlessly."
+  link: "/blog/tex-willer-generation-1"
+  image_path: "/assets/images/tex_willer_panel_ex.jpg"
+
+- title: "Time-Parallel PDE Solvers"
+  tags: ["High-Performance Computing", "PDE", "ML"]
+  description: "Hybrid AI-numerical approach for solving PDEs using parallel-in-time strategies."
+  detail: "Combining classical PDE solvers and neural networks to break the time barrier in PDE computations. Explore distributed HPC results here."
+  link: "/projects/time-parallel"
+  image_path: "/assets/images/tex_willer_panel_ex.jpg"
+
+- title: "My Homemade Drone"
+  tags: ["Robotics", "DIY"]
+  description: "A custom-built quadcopter from scratch, with arduino-based flight controller and real-time streaming to local servers."
+  detail: "It taught me fundamental electronics, 3D modeling, and firmware development. Flight stable at up to 30 mph wind gusts!"
+  link: "/projects/drone-build"
+  image_path: "/assets/images/tex_willer_panel_ex.jpg"
+
+- title: "Comic Panel Generator"
+  tags: ["LLM", "Computer Vision"]
+  description: "End-to-end pipeline for comics extraction: OCR-based text detection, bounding box alignment, and style transfer for new comics generation."
+  detail: "Combines Tesseract, MLLMs, and stable diffusion to produce original panel images from textual prompts. Fine-tuned on Tex Willer comics!"
+  link: "/projects/comic-generator"
+  image_path: "/assets/images/tex_willer_panel_ex.jpg"
+
+- title: "Language Models for Finance"
+  tags: ["NLP", "LLMs", "Finance"]
+  description: "Proprietary dataset of financial statements used to fine-tune specialized LLMs for sentiment and risk analysis."
+  detail: "Scores each statement with a domain-specific dictionary. Integrates with a real-time dashboard for portfolio managers."
+  link: "/projects/finance-llm"
+  image_path: "/assets/images/portfolio/finance.jpg"
