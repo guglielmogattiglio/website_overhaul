@@ -5,13 +5,15 @@ layout: default
 <div class="wide">  <!-- or your own custom class with bigger width -->
   <div id="main" role="main">
     {% include sidebar.html %}
-    <article class="page">
+    <article class="page layout--portfolio">
       <div class="page__inner-wrap">
         <header>
           <h1 id="page-title" class="page__title">{{ page.title }}</h1>
         </header>
         <section class="page__content">
+          <div class="page__content"></div>
           {{ content }}
+        </div>
         </section>
       </div>
     </article>

@@ -10,22 +10,26 @@
       <!-- Main content: image, title, tags, short desc -->
       <div class="portfolio-grid__content">
         <div class="portfolio-grid__image-wrapper">
-          <img src="{{ project.image_path | relative_url }}" alt="{{ project.title }}">
+          <img src="{{ project.image_path | relative_url }}" alt="{{ project.title }}" loading="lazy">
         </div>
         <div class="portfolio-grid__shortdesc">
           <h3>{{ project.title }}</h3>
+          <!-- Always visible tags -->
           <p class="portfolio-grid__tags">{{ project.tags | join: ', ' }}</p>
           <p>{{ project.description }}</p>
         </div>
       </div>
 
-      <!-- Overlay: always full width+height of the item -->
+      <!-- Overlay: spans the entire container -->
       <div class="portfolio-grid__overlay">
-        <!-- Put the actual text/content in a smaller container with min/max width -->
+        <!-- Nested container with scrollable content -->
         <div class="portfolio-grid__overlay-content">
           <h2>{{ project.title }}</h2>
           <p class="portfolio-grid__tags--overlay">{{ project.tags | join: ', ' }}</p>
-          <p class="portfolio-grid__detail">{{ project.detail }}</p>
+          <!-- Apply markdownify here -->
+          <div class="portfolio-grid__detail">
+            {{ project.detail | markdownify }}
+          </div>
           <a class="portfolio-grid__link" href="{{ project.link | relative_url }}">Learn more</a>
         </div>
       </div>

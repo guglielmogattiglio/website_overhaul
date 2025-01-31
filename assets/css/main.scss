@@ -27,3 +27,11 @@ img.cnt {
   margin-left: auto;
   margin-right: auto;
 }
+
+.layout--portfolio {
+  #main {
+    @include breakpoint($x-large) {
+      max-width: 1500px; // or whatever custom width you want
+    }
+  }
+}
