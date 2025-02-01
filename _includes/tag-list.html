@@ -8,7 +8,8 @@
 {% assign tags = include.tags | default: page.tags %}
 
 {% if site.tag_archive.path %}
-  {% assign tags_sorted = tags | sort_natural %}
+  <!-- {% assign tags_sorted = tags | sort_natural %} -->
+  {% assign tags_sorted = tags  %}
 
   {% assign size = include.size | default: "normal" %}
   {% if size == "small" %}
