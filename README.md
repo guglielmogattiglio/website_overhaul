@@ -19,7 +19,9 @@ Replace sample content with your own and [configure as necessary](https://mmista
 
 `bundle exec jekyll serve`
 
-
+{% assign target_post = site.posts | where: "slug", "tex-willer-generation-1" | first %}
+{{ target_post.url }}
+[first post]({{ target_post.url }})
 ---
 
 ## Troubleshooting

@@ -2,69 +2,27 @@
   tags: ["MLLM", "VLM", "LLM", "Computer Vision", "NLP"]
   description: |
     Custom comics storyline and panel generation matching Western style of Tex Willer comics. 
-
-    
+    <br><br>
     **Key technologies**
-    - test
-    - tes
+    - Multimodal language models
+    - Synthetic data generation
+    - Fine-tuning
+    - Diffusion 
   detail: |
-    **Goals** 
-    - Generate custom story-lines based on user input in the style of Western comics
+    ## Goals
+    - Generate custom story-lines based on user input details in the style of Western comics
     - Generate panels (images) with same style, setting and characters of the original comic, but using the custom storyline
 
-    **Features**
+    ## Features
     - End-to-end project, from data collection to deployment on my hardware
     - Use of image-text-to-text technology
     - Use of text-to-image technology
 
-    **Challenges and considerations**
+    ## Challenges and considerations
     - Must run on consumer hardware
     - Very limited hand-labeled data (to be created by me)
     - Matching original characters behavior in the generated story may be tricky
 
     **Work in Progress**: check the link below to find out more!
-  slug: "tex-willer-generation-1"
-  image_path: "/assets/posts/tex-willer-generation-1/tex_willer_panel_ex.jpg"
-
-- title: "Time-Parallel PDE Solvers"
-  tags: ["High-Performance Computing", "PDE", "ML"]
-  description: "Hybrid AI-numerical approach for solving PDEs using parallel-in-time strategies."
-  detail: >
-    **Goals**: Achieve sub-1-second style transformations using a pre-trained feed-forward network.  
-
-
-    **Challenges**: Balancing speed vs. fidelity, bundling model for CPU fallback.
-    **Outcomes**: Working demo with multiple artistic styles.
-  slug: "/projects/time-parallel"
-  image_path: "/assets/images/photo-collage.png.png"
-
-- title: "My Homemade Drone"
-  tags: ["Robotics", "DIY"]
-  description: "A custom-built quadcopter from scratch, with arduino-based flight controller and real-time streaming to local servers."
-  detail: "It taught me fundamental electronics, 3D modeling, and firmware development. Flight stable at up to 30 mph wind gusts!"
-  slug: "/projects/drone-build"
-  image_path: "/assets/images/tex_willer_panel_ex.jpg"
-
-- title: "Comic Panel Generator"
-  tags: ["LLM", "Computer Vision"]
-  description: "End-to-end pipeline for comics extraction: OCR-based text detection, bounding box alignment, and style transfer for new comics generation."
-  detail: |
-    **Features:**
-    - Realtime processing
-    - Supports multiple styles
-    - GPU and CPU optimized
-    
-    **Technologies Used:**
-    - TensorFlow
-    - OpenCV
-    
-    [View Project](https://example.com/neural-style-transfer)
-  slug: "/projects/comic-generator"
-  image_path: "/assets/images/tex_willer_panel_ex.jpg"
-
-- title: "Language Models for Finance"
-  tags: ["NLP", "LLMs", "Finance"]
-  description: "Proprietary dataset of financial statements used to fine-tune specialized LLMs for sentiment and risk analysis."
-  detail: "Scores each statement with a domain-specific dictionary. Integrates with a real-time dashboard for portfolio managers."
-  slug: "/projects/finance-llm"
-  image_path: "/assets/images/portfolio/finance.jpg"
+  slug: "tex-willer-project-series"
+  image_path: "/assets/portfolio/tex_willer_project.JPG"

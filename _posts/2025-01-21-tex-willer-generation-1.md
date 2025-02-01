@@ -1,6 +1,6 @@
 ---
 title: "Deep comics generation with multimodal LLMs - Overview - Part 1"
-last_modified_at: 2016-03-09T16:20:02-05:00
+# last_modified_at: 2016-03-09T16:20:02-05:00
 categories:
   - Blog
   - Projects
@@ -12,35 +12,8 @@ permalink: /blog/:title
 excerpt: "Introducing the first project featuring multimodal language models and diffusion - overview."
 ---
 
-# Intro 
-Welcome to my first on large language models! As with anything, the only way to truly learn is to do it yourself. Hence, in this series, I will walk you through how to carry out your (potentially first) end-to-end large language model.
-
-"Okay, great! But, wait, who are you again?"
-
-Valid question, why should you listen to what I say. I am currently in my last year of a PhD in machine learning at the University of Warwick. Some of my research on parallel-in-time PDE solvers got accepted at NeurIPS 2024. Prior to that, I did my MSc in data science at Bocconi University, Milan, and a BSc in economics and computer science, still at Bocconi.
-
-_**Note**: while this project may seem "trivial", it covers many state of the art technologies and paradigms, including multimodal language models (MLLMs), diffusion, fine-tuning, and deployment on resource-constrained hardware._
-
-# What's this project about
-
-**Project aim**: to generate new Tex Willer comics for the italian language (sorry non-italian speakers - you are really missing out here). The storyline should be customizable, and this should reflect in both text and visual adaptations.
-
-**Data**: open-source black-and-white books available on Internet Archive.
-
-**Why**: I love Tex! I have been eagerly reading it since I was young. It was (and still is) a role model for me and had an impact in shaping the person I am. Plus, it's really a fun and captivating pastime. I own the whole `Tex - Collezione storica a colori` collection of 256 color volumes that ran from 2007 till 2015. Even though I read them all multiple times, it never gets old, and I would love to have more. It's 2025, and with a bit of luck (and skills, and data) we will attempt to do just that!
-
-**Milestones** :
-- Data preprocessing and panel extraction
-- Text extraction and cleaning (labels)
-- Narrative reconstruction
-- Writing-style learning and story generation
-- Panel generation 
-- Panel temporal alignment
-- In-painting to color the black-and-white panels
-- [Optional] English translation
-- Deployment on a self-hosted solution
-
-Let's have a brief look at each a bit more in detail.
+{% assign orig_post = site.posts | where: "slug", "tex-willer-project-series" | first %}
+A new posts in the [Tex Willer comics generation]({{ orig_post.url }}) series. In this article, I provide a bird-eye view on the project milestones, focusing on desiderata and anticipating some of the challenges.
 
 ## Data processing
 
@@ -55,7 +28,7 @@ Pre-processing consists of extracting each panel using traditional computer visi
 While this may seem a standard optical character recognition (OCR) task, and in fact we could approach it as such, in practice we will want to fine-tune our model on the extracted text, to teach it the comics style. Technically, this would require hand-labeling thousands of of images. Instead, what we are going to do:
 - Leverage recent MLLMs that exhibit strong performance on OCR tasks, surpassing traditional approaches. See for example InternVL 2.5 and Qwen2-VL. We will discuss why this is the case. For a preview, consider the following panel 
 
-![tex willer panel](/assets/images/tex_willer_panel_ex.jpg){:.cnt}
+![tex willer panel](/assets/posts/tex-willer-generation-1/tex_willer_panel_ex.jpg){:.cnt : width="70%" }
 
 A famous OCR software, [Tesseract](https://github.com/tesseract-ocr/tesseract), extracts the following
 > 'BASTA COSI» KIT:\nIL SERPENTE NON E*PIU™\nIN GRADO Di MORDE-\n\nCHE ORA E*\nBELL’E PRONTO\nPER LA RESA\n\nILLUSO...\nSAM TRUSCOTT\nNON FINIRA™\n\nIMPICCATO! 4\n\n'
