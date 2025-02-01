@@ -60,6 +60,16 @@
         margin: 0;
         font-size: $type-size-6;
       }
+
+      ul {
+        margin: 0;
+        padding-left: 2em; // Ensures proper indentation
+        font-size: $type-size-6; // Adjust the font size as needed
+    
+        // li {
+        //   font-size: $type-size-6; // Adjust font size for list items
+        // }
+      }
     }
   
     // Overlay that spans the entire container

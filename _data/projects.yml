@@ -1,19 +1,30 @@
-- title: "Neural Style Transfer Playground"
-  tags: ["Deep Learning", "Computer Vision", "NLP", "Abracadabra", "pim salim"]
-  description: "Realtime style transfer using a lightweight CNN. Trained on classical paintings, it converts any photo into a Monet-like style in seconds."
+- title: "Fake comics generation"
+  tags: ["MLLM", "VLM", "LLM", "Computer Vision", "NLP"]
+  description: |
+    Custom comics storyline and panel generation matching Western style of Tex Willer comics. 
+
+    
+    **Key technologies**
+    - test
+    - tes
   detail: |
-    ## Goals
-    - Achieve sub-1-second style transformations.
-    - Support multiple artistic styles.
+    **Goals** 
+    - Generate custom story-lines based on user input in the style of Western comics
+    - Generate panels (images) with same style, setting and characters of the original comic, but using the custom storyline
 
-    ## Challenges
-    - Balancing speed and fidelity.
-    - Ensuring compatibility across devices.
+    **Features**
+    - End-to-end project, from data collection to deployment on my hardware
+    - Use of image-text-to-text technology
+    - Use of text-to-image technology
 
-    ## Outcomes
-    Successfully deployed a web app with real-time style transfer capabilities.
-  link: "/blog/tex-willer-generation-1"
-  image_path: "/assets/images/tex_willer_panel_ex.jpg"
+    **Challenges and considerations**
+    - Must run on consumer hardware
+    - Very limited hand-labeled data (to be created by me)
+    - Matching original characters behavior in the generated story may be tricky
+
+    **Work in Progress**: check the link below to find out more!
+  slug: "tex-willer-generation-1"
+  image_path: "/assets/posts/tex-willer-generation-1/tex_willer_panel_ex.jpg"
 
 - title: "Time-Parallel PDE Solvers"
   tags: ["High-Performance Computing", "PDE", "ML"]
@@ -24,14 +35,14 @@
 
     **Challenges**: Balancing speed vs. fidelity, bundling model for CPU fallback.
     **Outcomes**: Working demo with multiple artistic styles.
-  link: "/projects/time-parallel"
+  slug: "/projects/time-parallel"
   image_path: "/assets/images/photo-collage.png.png"
 
 - title: "My Homemade Drone"
   tags: ["Robotics", "DIY"]
   description: "A custom-built quadcopter from scratch, with arduino-based flight controller and real-time streaming to local servers."
   detail: "It taught me fundamental electronics, 3D modeling, and firmware development. Flight stable at up to 30 mph wind gusts!"
-  link: "/projects/drone-build"
+  slug: "/projects/drone-build"
   image_path: "/assets/images/tex_willer_panel_ex.jpg"
 
 - title: "Comic Panel Generator"
@@ -48,12 +59,12 @@
     - OpenCV
     
     [View Project](https://example.com/neural-style-transfer)
-  link: "/projects/comic-generator"
+  slug: "/projects/comic-generator"
   image_path: "/assets/images/tex_willer_panel_ex.jpg"
 
 - title: "Language Models for Finance"
   tags: ["NLP", "LLMs", "Finance"]
   description: "Proprietary dataset of financial statements used to fine-tune specialized LLMs for sentiment and risk analysis."
   detail: "Scores each statement with a domain-specific dictionary. Integrates with a real-time dashboard for portfolio managers."
-  link: "/projects/finance-llm"
+  slug: "/projects/finance-llm"
   image_path: "/assets/images/portfolio/finance.jpg"

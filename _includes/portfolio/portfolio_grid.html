@@ -16,7 +16,7 @@
           <h3>{{ project.title }}</h3>
           <!-- Always visible tags -->
           <p class="portfolio-grid__tags">{{ project.tags | join: ', ' }}</p>
-          <p>{{ project.description }}</p>
+          <p>{{ project.description | markdownify }}</p>
         </div>
       </div>
 
@@ -30,7 +30,8 @@
           <div class="portfolio-grid__detail">
             {{ project.detail | markdownify }}
           </div>
-          <a class="portfolio-grid__link" href="{{ project.link | relative_url }}">Learn more</a>
+          {% assign target_post = site.posts | where: "slug", project.slug | first %}
+          <a class="portfolio-grid__link" href="{{ target_post.url }}">Learn more</a>
         </div>
       </div>
     </div>
