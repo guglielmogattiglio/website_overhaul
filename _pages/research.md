@@ -24,13 +24,13 @@ Please note that only the papers containing a *Publication* link have undergone 
 
 ### Presentations
 
-- [Nearest Neighbors GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](assets/misc/nnGPara_Bioinference_Warwick_June_2024.pdf) - 7 June 2024 - [Third BioInference Conference](https://bioinference.github.io/2024/), hosted by the University of Warwick.
-- [RWParareal: a time-parallel PDE solver using Random Weights Neural Networks](assets/misc/RWPara_pres_Exeter_May24.pdf) - 1 May 2024 - [Met Office](https://www.metoffice.gov.uk/), Exeter, UK.
-- [Nearest Neighbor GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](assets/misc/NNGP_pres_DEDS24.pdf) - 20 February 2024 - [International Conference: Differential Equations for Data Science 2024 (DEDS2024)](https://scheme.hn/deds2024/), online.
-- [Nearest Neighbor GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](assets/misc/NNGP_pres_Algorithms.pdf) - 8 February 2024 - [Algorithms & Computationally Intensive Inference seminar](https://warwick.ac.uk/fac/sci/statistics/news/algorithms-seminars/), University of Warwick.
-- [Nearest Neighbor GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](assets/misc/NNGP_Exeter_pres.pdf) - 31 January 2024 - [ExCALIBUR Workshop: Data Driven Algorithms](https://www.eventbrite.co.uk/e/excalibur-workshop-data-driven-algorithms-tickets-780794767167), University of Exeter.
-- [Nearest Neighbor GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](assets/misc/NNGP_pres_YRM.pdf) - 23 January 2024 - [Young Researchers Meeting (YRM)](https://warwick.ac.uk/fac/sci/statistics/news/yrm/), University of Warwick.
-- [NN-GParareal: Improving Scalability of GParareal Using Nearest Neighbors](assets/misc/NNGP_pres_StGallen.pdf) - 21 November 2023 - St. Gallen University.
+- [Nearest Neighbors GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](/assets/misc/nnGPara_Bioinference_Warwick_June_2024.pdf) - 7 June 2024 - [Third BioInference Conference](https://bioinference.github.io/2024/), hosted by the University of Warwick.
+- [RWParareal: a time-parallel PDE solver using Random Weights Neural Networks](/assets/misc/RWPara_pres_Exeter_May24.pdf) - 1 May 2024 - [Met Office](https://www.metoffice.gov.uk/), Exeter, UK.
+- [Nearest Neighbor GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](/assets/misc/NNGP_pres_DEDS24.pdf) - 20 February 2024 - [International Conference: Differential Equations for Data Science 2024 (DEDS2024)](https://scheme.hn/deds2024/), online.
+- [Nearest Neighbor GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](/assets/misc/NNGP_pres_Algorithms.pdf) - 8 February 2024 - [Algorithms & Computationally Intensive Inference seminar](https://warwick.ac.uk/fac/sci/statistics/news/algorithms-seminars/), University of Warwick.
+- [Nearest Neighbor GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](/assets/misc/NNGP_Exeter_pres.pdf) - 31 January 2024 - [ExCALIBUR Workshop: Data Driven Algorithms](https://www.eventbrite.co.uk/e/excalibur-workshop-data-driven-algorithms-tickets-780794767167), University of Exeter.
+- [Nearest Neighbor GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](/assets/misc/NNGP_pres_YRM.pdf) - 23 January 2024 - [Young Researchers Meeting (YRM)](https://warwick.ac.uk/fac/sci/statistics/news/yrm/), University of Warwick.
+- [NN-GParareal: Improving Scalability of GParareal Using Nearest Neighbors](/assets/misc/NNGP_pres_StGallen.pdf) - 21 November 2023 - St. Gallen University.
 
 
 
@@ -39,12 +39,12 @@ Please note that only the papers containing a *Publication* link have undergone 
 
 ### Posters
 
-- [RandNet-Parareal: a time-parallel PDE solver using Random Neural Networks](assets/misc/poster_NeurIPS_2024.pdf) - 13 December 2024 - [38th Conference on Neural Information Processing Systems](https://neurips.cc/Conferences/2024), Vancouver, Canada.
+- [RandNet-Parareal: a time-parallel PDE solver using Random Neural Networks](/assets/misc/poster_NeurIPS_2024.pdf) - 13 December 2024 - [38th Conference on Neural Information Processing Systems](https://neurips.cc/Conferences/2024), Vancouver, Canada.
 
-- [Nearest Neighbor GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](assets/misc/poster_prob_num_school_Apr_24.pdf) - 24 April 2024 - [Probabilistic Numerics Spring School](https://probnumschool.org/pages/school.html), Southampton.
-- [Generating Stochastic Processes using Echo State Networks and Maximum Mean Discrepancy](assets/misc/Lyudmila_sept_2022.pdf) - 13 April 2023 - annual conference of the statistics Warwick department.
-- [Generating Stochastic Processes using Echo State Networks and Maximum Mean Discrepancy](assets/misc/Lyudmila_sept_2022.pdf) - 14 December 2022 - [AS&RU Partnership Day](https://warwick.ac.uk/fac/sci/statistics/asru/registration-page-2022n/), University of Warwick.
-- [Generating Stochastic Processes using Echo State Networks and Maximum Mean Discrepancy](assets/misc/Lyudmila_sept_2022.pdf) - 25 October 2022 - [Young Researchers Meeting (YRM)](https://warwick.ac.uk/fac/sci/statistics/news/yrm/), University of Warwick.
+- [Nearest Neighbor GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers](/assets/misc/poster_prob_num_school_Apr_24.pdf) - 24 April 2024 - [Probabilistic Numerics Spring School](https://probnumschool.org/pages/school.html), Southampton.
+- [Generating Stochastic Processes using Echo State Networks and Maximum Mean Discrepancy](/assets/misc/Lyudmila_sept_2022.pdf) - 13 April 2023 - annual conference of the statistics Warwick department.
+- [Generating Stochastic Processes using Echo State Networks and Maximum Mean Discrepancy](/assets/misc/Lyudmila_sept_2022.pdf) - 14 December 2022 - [AS&RU Partnership Day](https://warwick.ac.uk/fac/sci/statistics/asru/registration-page-2022n/), University of Warwick.
+- [Generating Stochastic Processes using Echo State Networks and Maximum Mean Discrepancy](/assets/misc/Lyudmila_sept_2022.pdf) - 25 October 2022 - [Young Researchers Meeting (YRM)](https://warwick.ac.uk/fac/sci/statistics/news/yrm/), University of Warwick.
 
 
 
@@ -73,4 +73,4 @@ Please note that only the papers containing a *Publication* link have undergone 
 
 ### Parareal Demo
 
-[1D Example](assets/misc/parareal_1D.mp4). [2D Example (Brussellator)](assets/misc/parareal_brus2D.mp4).
+[1D Example](/assets/misc/parareal_1D.mp4). [2D Example (Brussellator)](/assets/misc/parareal_brus2D.mp4).
