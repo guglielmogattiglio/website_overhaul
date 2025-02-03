@@ -30,8 +30,14 @@
           <div class="portfolio-grid__detail">
             {{ project.detail | markdownify }}
           </div>
-          {% assign target_post = site.posts | where: "slug", project.slug | first %}
-          <a class="portfolio-grid__link" href="{{ target_post.url }}">Learn more</a>
+          <!-- {% assign target_post = site.posts | where: "slug", project.slug | first %} -->
+          {% if project.slug %}
+            {% assign target_post = site.posts | where: "slug", project.slug | first %}
+            {% assign target_url = target_post.url %}
+          {% elsif project.link %}
+            {% assign target_url = project.link %}
+          {% endif %}
+          <a class="portfolio-grid__link" href="{{ target_url }}">Learn more</a>
         </div>
       </div>
     </div>
