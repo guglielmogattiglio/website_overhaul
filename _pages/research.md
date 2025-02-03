@@ -18,6 +18,7 @@ Please note that only the papers containing a *Publication* link have undergone 
 
 - G. Gattiglio and L. Grigoryeva and M. Tamborrino. *RandNet-Parareal: a time-parallel PDE solver using Random Neural Networks*, 2024. 38th Conference on Neural Information Processing Systems (NeurIPS 22024). ([ArXiv](https://arxiv.org/abs/2411.06225v1), [NeuriPS](https://openreview.net/forum?id=974ojuN0jU&referrer=%5Bthe%20profile%20of%20Lyudmila%20Grigoryeva%5D(%2Fprofile%3Fid%3D~Lyudmila_Grigoryeva1)))
 - G. Gattiglio and L. Grigoryeva and M. Tamborrino. *Nearest Neighbors GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers*, 2024. ([ArXiv](https://arxiv.org/abs/2405.12182), In review)
+- Gattiglio, Guglielmo. *Tempered Stochastic Search of Bayesian CART Models.*, 2021. Milano: Università Bocconi. Print. ([PDF](/assets/misc/Tempered_stochastic_search_of_bayesian_cart_model_search.pdf))
 
 
 
