@@ -140,3 +140,5 @@ analytics:
     tracking_id: "G-LW91DTJEVW"
     anonymize_ip: false # default
 
+kramdown:
+  math_engine: mathjax
