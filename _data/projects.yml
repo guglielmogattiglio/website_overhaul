@@ -25,4 +25,53 @@
 
     **Work in Progress**: check the link below to find out more!
   slug: "tex-willer-project-series"
-  image_path: "/assets/portfolio/tex_willer_project.JPG"
+  image_path: "/assets/portfolio/tex_willer_project_v2.JPG"
+
+- title: "BayesCART: a Python package for efficient Bayesian CART model search"
+  tags: ["Python package development", "Object oriented programming", "Bayesian statistics", "Decision trees"]
+  description: "A Python package for Bayesian Classification and Regression Trees (CART) with advanced Markov Chain Monte Carlo (MCMC) sampling. Designed for modularity, efficiency, and extensibility, it follows best practices of modern, high-performance machine learning software."
+  detail: |
+
+    ## Features
+    - **Advanced ML Algorithms**: Tackles Bayesian CART multimodality using custom MCMC samplers
+    - **Efficient software design**. Uses modular OOP principles, parallelization, and caching 
+    - **Robust engineering practices**. Comprehensive documentation, type hints, and automated CI workflows 
+    - **Scalability and extensibility**. Large datasets and subclassing support
+    - **Parallelism and performance**: Supports parallel execution for scalable inference.
+    - **Optimized memory usage**: Lightweight copy mechanisms reduces memory overhead
+    
+
+    ## Documentation and Testing
+    - Sphinx Documentation
+    - Type Annotations
+    - Automated Testing & CI workflows
+  slug: "the-making-of-the-bayescart-package"
+  image_path: "/assets/portfolio/bayescart_protfolio_v5.PNG"
+
+- title: "Tempered Stochastic Search of Bayesian CART Models"
+  tags: ["Bayesian CART", "Decision trees", "Multimodal posterior", "Optimization", "MCMC"]
+  description: "Master research thesis on Bayesian Classification and Regression Trees (CART) models.<br><br>Developed custom posterior sampling MCMC techniques to address multimodality and local optima.<br><br>**Outcome**: enables the solution of new problem classes"
+  detail: |
+
+    ## Challenges
+    - Sharply peaked multimodal posterior landscape
+    - Traditional MCMC sampler get stuck in local optima
+    - Standard posterior flattening samples overfit trees
+    - Wrong splits in large trees are nearly impossible to undo
+
+    ## Solutions
+    - Use tempering to encourage mode jumping
+    - Introduce pseudo-prior to force maximum tree depth during exploration
+    - Biasing towards small trees yielding a bottom-up constructive tree search
+
+    ## Outcomes
+    - Orders of magnitude faster convergence 
+    - Drastically improved multimodal posterior exploration
+    - Accurate posterior probability estimates on smaller problems
+
+    ## Limitations
+    - The space of trees is combinatorially bin in the data size
+    - Extensive exploration is still tricky in complex problems
+  link: "/assets/misc/Tempered_stochastic_search_of_bayesian_cart_model_search.pdf"
+  image_path: "/assets/portfolio/portfolio_filler_1_2.PNG"
+
