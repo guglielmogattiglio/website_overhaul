@@ -10,19 +10,20 @@ author_profile: true
 
 Welcome to my website :tada:
 
+
 This is the place where I publish my [research](/research/) and some of the [projects](/projects/) I am working on. Occasionally, I also [post](/posts/) tutorial and articles on ML and AI topics or recent research that I find fascinating.
 
+<br>
 
+# For recruiters
 <div style="display: flex; flex-direction: column;">
-
-<p style="margin-bottom: 0px;"><strong>For recruiters</strong>. Here are some directions on where to find what:</p>
-
+<p style="margin-bottom: 0px;">Here are some directions on where to find what:</p>
 <div style="display: flex; gap: 40px;">
 
 <div>
 <ul>
 <li><a href="/assets/misc/Guglielmo_Gattiglio_CV.pdf">My latest CV</a></li>
-<li><a href="/projects/">My Portfolio</a></li>
+<li><a href="/projects/">My Project Portfolio</a></li>
 </ul>
 </div>
 
@@ -37,6 +38,8 @@ This is the place where I publish my [research](/research/) and some of the [pro
 
 </div>
 
+
+<br>
 
 
 {% assign target_post = site.posts | where: "slug", "tex-willer-project-series" | first %}
