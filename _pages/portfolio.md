@@ -3,6 +3,8 @@ permalink: /projects/
 title: "Projects Portfolio"
 layout: portfolio  # or layout: default + classes: [wide]
 classes: wide
+redirect_from:
+  - /portfolio/
 ---
 
 
