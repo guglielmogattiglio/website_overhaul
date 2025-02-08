@@ -10,13 +10,13 @@ tags:
   - Object oriented programming
   - Tree models
   - MCMC
-permalink: /blog/bayescart-python-package
+permalink: /blog/bayescart-python-package/
 excerpt: "Insights into the making of BayesCART packages: coding and optimization tricks to get the most out of your code."
 ---
 
 ### Introduction
 
-[BayesCART](https://github.com/guglielmogattiglio/bayescart) is a Python package for Bayesian Classification and Regression Trees (CART) with advanced Markov Chain Monte Carlo (MCMC) sampling. Designed for modularity, efficiency, and extensibility, it follows best practices of modern, high-performance machine learning software.
+[BayesCART](https://github.com/guglielmogattiglio/bayescart/) is a Python package for Bayesian Classification and Regression Trees (CART) with advanced Markov Chain Monte Carlo (MCMC) sampling. Designed for modularity, efficiency, and extensibility, it follows best practices of modern, high-performance machine learning software.
 
 ![A screenshot of the bayescart package code](/assets/posts/the-making-of-the-bayescart-package/bayescart_package_cut_better.png){:.cnt }
 

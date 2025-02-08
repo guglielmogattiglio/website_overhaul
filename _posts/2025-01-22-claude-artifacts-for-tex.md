@@ -7,7 +7,7 @@ tags:
   - Prompt Engineering
   - Claude Artifacts
   - Data labelling
-permalink: /blog/:title
+permalink: /blog/:title/
 excerpt: "A reflection on using Claude Artifacts to generate custom tools in minutes, applied to the labeling of Tex Willer comics."
 ---
 
@@ -65,7 +65,7 @@ While it looks good, the browser kept on asking for authorization to store the f
 
 ## The final version 
 
-This is the sequence of prompts that got me to the final result (I will skipt Claude output and opt for a quick summary instead).
+This is the sequence of prompts that got me to the final result (I will skip Claude output and opt for a quick summary instead).
 
 Prompt 1
 >Two changes:

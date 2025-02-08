@@ -7,7 +7,7 @@ tags:
   - Prompt Engineering
   - o3-mini
   - Jekyll
-permalink: /blog/:title
+permalink: /blog/:title/
 excerpt: "How to use OpenAI o3-mini to one-shot build a compelling, modular and easy to use Portfolio layout with minimal html/CSS adjustment."
 ---
 

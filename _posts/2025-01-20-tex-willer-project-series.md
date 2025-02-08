@@ -8,7 +8,7 @@ tags:
   - MLLM
   - Computer vision
   - NLP
-permalink: /blog/:title
+permalink: /blog/:title/
 excerpt: "Introducing a series of blog posts on my new project: generating novel, fake comics resembling Tex Willer. "
 ---
 

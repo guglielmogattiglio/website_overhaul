@@ -9,7 +9,7 @@ tags:
   - Tree models
   - MCMC
   - Tempering
-permalink: /blog/bayesian-classification-and-regression-trees-theoretical-series
+permalink: /blog/bayesian-classification-and-regression-trees-theoretical-series/
 excerpt: "A detailed study of Bayesian extension of CART models, challenges in the posterior distribution exploration, and their solution."
 ---
 

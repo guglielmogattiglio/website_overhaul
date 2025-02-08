@@ -9,7 +9,7 @@ tags:
   - Bayesian CART
   - Tree models
   - MCMC
-permalink: /blog/using-bayescart-to-solve-cgm98
+permalink: /blog/using-bayescart-to-solve-cgm98/
 excerpt: "A tutorial on how to use the BayesCART package, applied to the CGM98 challenging yet simple example."
 ---
 

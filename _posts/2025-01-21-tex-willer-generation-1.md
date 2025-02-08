@@ -8,7 +8,7 @@ tags:
   - MLLM
   - Computer vision
   - NLP
-permalink: /blog/:title
+permalink: /blog/:title/
 excerpt: "Introducing the first project featuring multimodal language models and diffusion - overview."
 ---
 
