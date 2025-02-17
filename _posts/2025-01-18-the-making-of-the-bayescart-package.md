@@ -1,5 +1,5 @@
 ---
-title: "BayesCART: a Python package for efficient Bayesian CART model search"
+title: "BayesCART - a Python package for efficient Bayesian CART model search"
 # last_modified_at: 2016-03-09T16:20:02-05:00
 categories:
   - Blog
